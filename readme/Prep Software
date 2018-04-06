@@ -1,0 +1,12 @@
+1. Create free tier AWS account
+2. Create AWS developer account ->https://developer.amazon.com/
+3. Install Node JS
+4. Install Ask Cli -> npm install -g ask-cli
+5. Create new Alexa skill -> ask new --skill-name hello-world --lambda-name hello-world / ask new -n hello-world
+6. copy paste index.js
+7. create healthcheck.js lambda and trigger as api gateway
+6. ask deploy
+
+Note -
+For ask cli to deploy lambda complete the following set up 
+https://developer.amazon.com/docs/smapi/set-up-credentials-for-an-amazon-web-services-account.html
