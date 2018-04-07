@@ -1,11 +1,29 @@
+Software Perquisites  
 1. Create free tier AWS account
 2. Create AWS developer account ->https://developer.amazon.com/
 3. Install Node JS
 4. Install Ask Cli -> npm install -g ask-cli
-5. Create new Alexa skill -> ask new --skill-name hello-world --lambda-name hello-world / ask new -n hello-world
-6. copy paste index.js
-7. create healthcheck.js lambda and trigger as api gateway
-6. ask deploy
+5. Set up was config -
+   5.1 nano ~/.aws/credentials
+        [default]
+        aws_access_key_id= <your access key>
+        aws_secret_access_key= <your secret access>
+
+Workshop -
+[Phase 1]
+1. Create new Alexa skill -> ask new --skill-name health-check --lambda-name health-check / ask new -n health-check
+2. Open the generated project in IDE of your choice
+3. Clone https://github.com/deepakg23gmail/goingserverless.git
+4. Copy code from index.js from cloned repo to replace with that under /lambda/custom in generated ask project  
+5. Deploy the generated project -> ask deploy
+6. Test via Alexa simulator
+
+Phase [2]
+1. Create your own static website in S3 
+2. Create healthcheck.js lambda and trigger as api gateway. Copy the code from repo under /lambda
+3. Make necessary changes in index.js -> just change the api end endpoint
+4. Re-deploy the generated ask project -> ask deploy 
+5. Test via Alexa simulator
 
 Note -
 For ask cli to deploy lambda complete the following set up 
