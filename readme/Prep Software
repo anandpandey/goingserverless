@@ -3,11 +3,7 @@ Software Perquisites
 2. Create AWS developer account ->https://developer.amazon.com/
 3. Install Node JS
 4. Install Ask Cli -> npm install -g ask-cli
-<<<<<<< HEAD
-5. Set up was config -
-=======
 5. Set up aws config -
->>>>>>> 5c05f8b5cf0c1025772a692e18d8a9c6d53a1d19
    5.1 nano ~/.aws/credentials
         [default]
         aws_access_key_id= <your access key>
@@ -18,33 +14,22 @@ Workshop -
 1. Create new Alexa skill -> ask new --skill-name health-check --lambda-name health-check / ask new -n health-check
 2. Open the generated project in IDE of your choice
 3. Clone https://github.com/deepakg23gmail/goingserverless.git
-<<<<<<< HEAD
-4. Copy code from index.js from cloned repo to replace with that under /lambda/custom in generated ask project  
-=======
 4. Copy following files from cloned repo to generated project 
    4.1 index.js with that under health-check/lambda/custom in generated project  
    4.2 skill.json with that under /health-check in the generated project
    4.3 en-US.json with that under health-check/models
->>>>>>> 5c05f8b5cf0c1025772a692e18d8a9c6d53a1d19
 5. Deploy the generated project -> ask deploy
 6. Test via Alexa simulator
 
 Phase [2]
-<<<<<<< HEAD
-1. Create your own static website in S3 
-=======
 1. Create your own static website in S3 by uploading files under /website folder in the repo
->>>>>>> 5c05f8b5cf0c1025772a692e18d8a9c6d53a1d19
 2. Create healthcheck.js lambda and trigger as api gateway. Copy the code from repo under /lambda
 3. Make necessary changes in index.js -> just change the api end endpoint
 4. Re-deploy the generated ask project -> ask deploy 
 5. Test via Alexa simulator
-<<<<<<< HEAD
-=======
 
 Phase [3] - The challenge
 Create new Alexa skill for counting the number of errors recorded in application logs 
->>>>>>> 5c05f8b5cf0c1025772a692e18d8a9c6d53a1d19
 
 Note -
 For ask cli to deploy lambda complete the following set up 
