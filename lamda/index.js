@@ -13,15 +13,15 @@ exports.handler = function(event, context) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('SayHello');
+        this.emit('SayHealthCheck');
     },
-    'HelloWorldIntent': function () {
-        this.emit('SayHello');
+    'HealthCheckIntent': function () {
+        this.emit('SayHealthCheck');
     },
     'MyNameIsIntent': function () {
         this.emit('SayHelloName');
     },
-    'SayHello': function () {
+    'SayHealthCheck': function () {
         //https://pbtb4p8bsc.execute-api.us-east-1.amazonaws.com/dev/healthcheck
         var options = {
             host:'pbtb4p8bsc.execute-api.us-east-1.amazonaws.com',
@@ -74,4 +74,3 @@ var handlers = {
             " or 'alexa, ask hello world my name is awesome Aaron'");
     }
 };
-

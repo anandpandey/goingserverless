@@ -1,0 +1,46 @@
+{
+    "interactionModel":{
+        "languageModel":{
+            "invocationName":"health check",
+            "types":[],
+            "intents":[
+                {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+                },
+                {
+                    "name":"HealthCheckIntent",
+                    "slots":[
+
+                    ],
+                    "samples":[
+                        "tell health check status of my app",
+                        "tell health check status of my application"
+                    ]
+                },
+                {
+                    "name":"MyNameIsIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples":[
+                        "my name is {name}",
+                        "i am {name}",
+                        "you can call me {name}"
+                    ]
+                }
+            ]
+        }
+    }
+}
