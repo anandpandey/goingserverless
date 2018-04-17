@@ -3,7 +3,7 @@ Software Perquisites
 2. Create AWS developer account ->https://developer.amazon.com/
 3. Install Node JS
 4. Install Ask Cli -> npm install -g ask-cli
-5. Set up was config -
+5. Set up aws config -
    5.1 nano ~/.aws/credentials
         [default]
         aws_access_key_id= <your access key>
