@@ -1,17 +1,18 @@
 Software Perquisites  
-1. Create free tier AWS account
-2. Create AWS developer account ->https://developer.amazon.com/
+1. Create free tier AWS account -> https://aws.amazon.com/free/activate-your-free-tier-account/
+2. Create AWS developer account -> https://developer.amazon.com/
 3. Install Node JS
 4. Install Ask Cli -> npm install -g ask-cli
-5. Set up aws config -
-   5.1 nano ~/.aws/credentials
+5. Run the following command in shell terminal  -> ask init (follow the set up steps that will allow ask to connect to alexa development console etc.)
+6. Set up aws config -
+   6.1 nano ~/.aws/credentials
         [default]
         aws_access_key_id= <your access key>
         aws_secret_access_key= <your secret access>
 
 Workshop -
 [Phase 1]
-1. Create new Alexa skill -> ask new --skill-name health-check --lambda-name health-check / ask new -n health-check
+1. Create new Alexa skill -> ask new --skill-name health-check --lambda-name health-check 
 2. Open the generated project in IDE of your choice
 3. Clone https://github.com/deepakg23gmail/goingserverless.git
 4. Copy following files from cloned repo to generated project 
